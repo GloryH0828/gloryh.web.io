@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MIUI 10</title>
+<style type="text/css">
+		body,div,ul,li,img{margin:0 auto;
+			padding:0;
+			list-style: none;}
+		#banner{width:1920px;
+			height:891px;
+		
+			position: relative;}
+		#banner .hide{display: none;}
+		#banner .show{display: block;}
+		
+	</style>
+
+<link rel="stylesheet" href="css/index.css" type="text/css"/>
+<link rel="stylesheet" href="css/MIUI10.css" type="text/css"/>
+</head>
+<body>
+<ul class="menu">
+<li class="top"><a href="login.html"class="top_link"><span>登录</span></a></li>
+<li class="top"><a href="download.html"class="top_link"><span>下载</span></a></li>
+<li class="top"><a href="MIUI 10.html"class="top_link"><span>MIUI 10</span></a></li>
+<li class="top"><a href="index.html"class="top_link"><span>首页</span></a></li>
+</ul>
+<div class="ba" align="center"><a href="img/MIUI10/MIUI10.mp4"><img src="img/MIUI10/0.png"/></a></div>
+<div class="a1"><img src="img/MIUI10/1.163.163.png"/><h1 align="center">耳目一新的设计</h1><p align="center">全新的 MIUI 10，视觉和听觉的双重革新。视觉上，我们以“全面屏”为设计核心，加入属于全面屏时代的操作手势，打造完整、开阔的 UI 体验；<br>听觉上，我们带来了“自然”、“变化”、“令人愉悦”的声音系统，在解决通知打扰的基础上，开启一场美妙的声音之旅。</p></div>
+
+
+
+
+<body onload="init();">
+	<div id="banner" onmouseover="stop();" onmouseout="init();" align="center" >
+		<img src="img/MIUI10/baizaoyin1.png" class="show">
+		<img src="img/MIUI10/baizaoyin2.png" class="hide">
+		<img src="img/MIUI10/baizaoyin3.png" class="hide">
+		<img src="img/MIUI10/baizaoyin4.png" class="hide">
+        <img src="img/MIUI10/baizaoyin5.png" class="hide">
+	
+	</div>
+	<script type="text/javascript">
+		var id, n=0;
+		function init(){
+			id=setInterval(fun,2000);
+
+		}
+     function fun(){
+     	n++;
+     	var imgs=document.getElementById("banner").getElementsByTagName('img');
+		var lis=document.getElementById("banner").getElementsByTagName('li');
+     	//alert(imgs.length);
+        for(var i=0;i<imgs.length;i++)
+        	{imgs[i].style.display="none";}
+		for(var i=0;i<lis.length;i++)
+        	{lis[i].className="two";}
+        var index=n%imgs.length;
+        imgs[index].style.display="block";
+		lis[index].className="one";
+     }
+    function stop(){
+    	clearInterval(id);
+    }
+	</script>
+
+
+
+
+<div class="a1"><img src="img/MIUI10/quanmianping.png"/></div>
+<div class="a1"><h1>一触即达的全面屏手势</h1><p>全面屏手机需要搭配专属全面屏的操作手势。上滑、横滑、悬停......一触即达的指尖魔法。</p><br /><img src="img/MIUI10/shoushi.png" /></div>
+<div class="a1"><img src="img/MIUI10/tongzhizhongxin.png" /></div>
+<div class="a1"><h1>更快的应用启动速度</h1><p>应用启动速度，是手机体验的基本，也是对系统爆发力的考核。在 MIUI 10 中，我们做了系统级的启动速度优化，点击应用（系统应用和第三方应用、游戏）即<br />可感受“推背感”十足的响应。</p><br /><br /><video  width="630px" height="355px" src="img/MIUI10/qidongsudu.mp4"  controls="controls"  loop="loop">
+							</video></div>
+<div class="a1"><h1>AI 预加载，启动不等待</h1><p>基于AI 深度学习，MIUI 10 预判出即将被使用的应用并提前后台预加载，一定概率实现 0 秒瞬间启动。</p><br /><br />
+<video  width="630px" height="355px" src="img/MIUI10/AI.mp4"  controls="controls"  loop="loop">
+							</video></div>
+<div class="a1"><img src="img/MIUI10/shengtailian.png" /></div>
+<div class="a1"><a href="download.html"><h1>开启MIUI探寻之旅</h1><img src="img/MIUI10/download.png" /></a></div>
+<div   class="b5" align="center">
+<hr/><p  align="center" >这是计科172黄光辉写的第二个网页，他是网页中的介绍子页</p><p align="center">&copy;www.mi.com</p></div>
+</body>
+</html>

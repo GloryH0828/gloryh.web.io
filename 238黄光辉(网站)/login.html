@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录</title>
+
+<link rel="stylesheet" href="css/login.css" type="text/css"/>
+<script type="text/javascript">
+function checkform() {
+    $user_name = document.getElementById("login").value;
+    $user_pwd = document.getElementById("password").value;
+    if ($user_name == '') {
+        alert("用户名不能为空！");
+		return false;
+    }
+
+    if ($user_pwd == '') {
+        alert("密码不能为空！");
+        return false;
+    }
+
+    return true;
+}
+
+</script>
+</head>
+
+<body>
+<ul class="menu">
+<li class="top"><a href="login.html"class="top_link"><span>登录</span></a></li>
+<li class="top"><a href="download.html"class="top_link"><span>下载</span></a></li>
+<li class="top"><a href="MIUI 10.html"class="top_link"><span>MIUI 10</span></a></li>
+<li class="top"><a href="index.html"class="top_link"><span>首页</span></a></li>
+</ul>
+<form id="login-form" action="#" method="post">
+<fieldset>
+<div align="center"><img src="img/login/MI.png"/></div>
+<h3 align="center"><strong><font face="微软雅黑">小米账号登录</font></strong></h3>
+<label for="login">账号</label>
+<input type="text" id="login" name="login" placeholder="请输入账号" onblur="checkform();"/>
+<div class="clear"></div>
+<label for="password">密码</label>
+<input type="password" id="password" name="password" onblur="checkform();"/>
+<div class="clear"></div>
+<label for="remember_me" style="padding:0;">记住状态？</label>
+<input type="checkbox" id="remember_me" style="position:relative; top: 3px; margin:0; " name="remember_me"/>
+<div class="clear"></div>
+<br/>
+
+<div><a href="register.html"  class="top_link" ><input type="button" style="margin: -20px 0 20px 287px;" class="button" id="resgister" value="注册" /></a><a href="download.html"  class="top_link" ><input type="button" style="margin: -20px 0 0 287px;" class="button" id="commit" value="登录" />
+</a></div>
+
+</fieldset>
+</form>
+<p align="center"><strong>&copy;www.mi.com</strong></p>
+</body>
+</html>
